@@ -89,7 +89,7 @@ int main( int argc, char *argv[] )
 
   char *ip, *desired_port;
   int port;
-
+  /* JWL */ 
   if ( argc - optind != 2 ) {
     usage( argv[ 0 ] );
     exit( 1 );
@@ -106,6 +106,7 @@ int main( int argc, char *argv[] )
     exit( 1 );
   }
 
+  /* JWL */ 
   if ( desired_port
        && ( strspn( desired_port, "0123456789" ) != strlen( desired_port ) ) ) {
     fprintf( stderr, "%s: Bad UDP port (%s)\n\n", argv[ 0 ], desired_port );
@@ -141,6 +142,7 @@ int main( int argc, char *argv[] )
   set_native_locale();
 
   try {
+    /* JWL */ 
     STMClient client( ip, port, key, predict_mode );
     client.init();
 

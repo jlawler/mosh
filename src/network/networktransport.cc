@@ -40,6 +40,7 @@ using namespace Network;
 using namespace std;
 
 template <class MyState, class RemoteState>
+/* JWL FIXME TODO */
 Transport<MyState, RemoteState>::Transport( MyState &initial_state, RemoteState &initial_remote,
 					    const char *desired_ip, const char *desired_port )
   : connection( desired_ip, desired_port ),
@@ -51,7 +52,7 @@ Transport<MyState, RemoteState>::Transport( MyState &initial_state, RemoteState 
 {
   /* server */
 }
-
+/* JWL FIXME TODO */
 template <class MyState, class RemoteState>
 Transport<MyState, RemoteState>::Transport( MyState &initial_state, RemoteState &initial_remote,
 					    const char *key_str, const char *ip, int port )

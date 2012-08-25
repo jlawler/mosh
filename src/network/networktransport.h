@@ -64,6 +64,7 @@ namespace Network {
     FragmentAssembly fragments;
     bool verbose;
 
+/* JWL FIXME TODO */
   public:
     Transport( MyState &initial_state, RemoteState &initial_remote,
 	       const char *desired_ip, const char *desired_port );

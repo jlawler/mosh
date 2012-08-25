@@ -187,6 +187,7 @@ int main( int argc, char *argv[] )
 	break;
       case 'p':
 	desired_port = optarg;
+/* JWL FIXME TODO */
 	break;
       case 's':
 	desired_ip = strdup( get_SSH_IP().c_str() );
